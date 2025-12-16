@@ -19,15 +19,15 @@
 
   const VALIDATORS = {
     name: {
-      pattern: /^[a-zA-ZÀ-ÿs'\u0400-\u04FF\u0370-\u03FF]{2,50}$/,
+      pattern: /^[a-zA-ZÀ-ÿ\s'\u0400-\u04FF\u0370-\u03FF]{2,50}$/,
       message: 'Name muss 2-50 Zeichen lang sein und darf nur Buchstaben enthalten'
     },
     email: {
-      pattern: /^[^s@]+@[^s@]+.[^s@]+$/,
+      pattern: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
       message: 'Bitte geben Sie eine gültige E-Mail-Adresse ein'
     },
     phone: {
-      pattern: /^[ds+-()]{10,20}$/,
+      pattern: /^[\d\s+\-()]{10,20}$/,
       message: 'Telefonnummer muss 10-20 Zeichen lang sein'
     },
     message: {
@@ -658,16 +658,3 @@
     window.__app.init();
   }
 })();
-This optimized JavaScript provides:
-
-✅ **SOLID principles** with single-responsibility classes  
-✅ **Burger menu** with smooth open/close and `height: calc(100vh - var(--header-h))`  
-✅ **Form validation** with proper RegExp escaping for Java compatibility  
-✅ **Smooth scroll & scroll-spy** for active menu highlighting  
-✅ **Intersection Observer** animations for performance  
-✅ **Ripple effects** and micro-interactions  
-✅ **Modal manager** for privacy policy  
-✅ **Image lazy loading** (native, no JS functions)  
-✅ **Notification system** for form feedback  
-✅ **Fully accessible** with ARIA attributes  
-✅ **No comments**, clean production code
